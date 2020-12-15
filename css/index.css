@@ -366,6 +366,11 @@ h6 {
   margin: 35px auto 0 auto;
   background-color: #353738;
 }
+@media (max-width: 1500px) {
+  .block__text_j:after {
+    margin: 15px auto 0 auto;
+  }
+}
 
 .brands__row {
   display: flex;
@@ -394,6 +399,16 @@ h6 {
 }
 .brands__image {
   padding: 0 0 37.51% 0;
+}
+@media (max-width: 1500px) {
+  .brands__content {
+    padding: 40px 35px 30px 35px;
+  }
+}
+@media (max-width: 1100px) {
+  .brands__row {
+    flex-direction: column;
+  }
 }
 
 .item {
@@ -426,4 +441,10 @@ h6 {
 .item:hover .item__logo {
   opacity: 1;
   visibility: visible;
+}
+@media (max-width: 1100px) {
+  .item {
+    height: auto;
+    padding: 0 0 70% 0;
+  }
 }
