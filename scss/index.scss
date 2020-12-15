@@ -136,6 +136,16 @@ $minwidth: 320px;
 
 
 .brands {
+    &_rev {
+        .brands__column {
+            @include flexorder(1);
+
+            &_b {
+                @include flexorder(2);
+            }
+        }
+    }
+
     &__row {
         @include flexbox();
 

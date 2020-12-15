@@ -372,6 +372,12 @@ h6 {
   }
 }
 
+.brands_rev .brands__column {
+  order: 1;
+}
+.brands_rev .brands__column_b {
+  order: 2;
+}
 .brands__row {
   display: flex;
 }
