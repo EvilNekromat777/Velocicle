@@ -2,27 +2,48 @@
     position: absolute;
     width: 100%;
     z-index: 50;
-    border: red solid 2px;
+    left: 0;
+    top: 35px;
+
+    &__row {
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        height: 85px;
+    }
+
+    &__menu {}
+
+    &__logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        @include tr(-50%, 0px, 0px);
+    }
 }
 
-.header__row {
-    @include flexbox();
-    justify-content: center;
-    align-items: center;
-}
+.menu {
+    &__list {
+        @include flexbox();
 
-.menu__list {
-    @include flexbox();
+        li {
+            padding: 0 37.5px;
 
-    li {}
-}
+            &:nth-child(2) {
+                padding: 0 110px 0 37.5px;
+            }
 
-.meny {}
+            &:nth-child(3) {
+                padding: 0 37.5px 0 110px;
+            }
+        }
+    }
 
-.menu__link {
-    color: #4d4959;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.6px;
+    &__link {
+        color: #4d4959;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.6px;
+    }
 }
