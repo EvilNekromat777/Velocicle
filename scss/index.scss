@@ -172,7 +172,21 @@ $minwidth: 320px;
     display: block;
     position: relative;
 
-    &__logo {}
+    &__logo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include flexbox;
+        @include anim(0.3s, 0s);
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(100, 194, 158, 0.5);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+    }
 
     &__image {
         position: absolute;
@@ -180,5 +194,12 @@ $minwidth: 320px;
         height: 100%;
         top: 0;
         left: 0;
+    }
+
+    &:hover {
+        .item__logo {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
