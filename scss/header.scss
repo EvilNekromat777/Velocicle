@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+    border: red solid 2px;
+}
+
+.header__row {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list {
+    @include flexbox();
+
+    li {}
+}
+
+.meny {}
+
+.menu__link {
+    color: #4d4959;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+}

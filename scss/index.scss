@@ -1,0 +1,69 @@
+// Миксины
+@import "mixins.scss";
+
+// Подключаем шрифты
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Шрифт по умолчанию
+$fontfamili: "Lato";
+
+// Подключаем файлы со стилями страниц и элементов
+@import "ui.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+
+// Переменные
+$minwidth: 320px;
+
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Обнуление: общие параметры
+@import "null.scss";
+
+// Оболочка
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+// Основная сетка
+.contaner {
+    max-width: 1130px;
+    padding: 0 15px;
+}
+
+// Основной блок
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include flexbox();
+    flex-direction: column;
+}
+
+.main-screen {
+    position: relative;
+    background-image: url(../images/bg_main.jpg);
+    @extend .ibg;
+    flex: 1 0 100%;
+
+    // .main-screen__bg
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.content {}
