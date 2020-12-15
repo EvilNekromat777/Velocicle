@@ -353,3 +353,29 @@ h6 {
   font-size: 18px;
   line-height: 34px;
 }
+.block__text_j {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+}
+.block__text_j:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  display: block;
+  margin: 35px auto 0 auto;
+  background-color: #353738;
+}
+
+.brands__row {
+  display: flex;
+}
+.brands__column {
+  flex: 0 1 33.333%;
+}
+.brands__column_b {
+  flex: 0 1 66.667%;
+}
+.brands__content {
+  padding: 70px 65px 55px 65px;
+}
