@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 // Подключаем шрифты
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
 
 // Шрифт по умолчанию
 $fontfamili: "Lato";
@@ -36,6 +36,7 @@ $minwidth: 320px;
 .contaner {
     max-width: 1130px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 // Основной блок
@@ -67,3 +68,34 @@ $minwidth: 320px;
 }
 
 .content {}
+
+.generation {
+    padding: 120px 0;
+    background-color: #f7f7f7;
+
+    &__block {}
+}
+
+.block {
+    text-align: center;
+
+    &__icon {
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__title {
+        color: #353738;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+        line-height: 24px;
+        margin: 0 0 18px 0;
+    }
+
+    &__text {
+        color: #848789;
+        font-size: 18px;
+        line-height: 34px;
+    }
+}
