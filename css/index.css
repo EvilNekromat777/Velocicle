@@ -322,6 +322,17 @@ h6 {
   padding: 120px 0;
   background-color: #f7f7f7;
 }
+@media (max-width: 900px) {
+  .generation {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 600px) {
+  .generation {
+    padding: 30px 0;
+  }
+}
+
 .block {
   text-align: center;
 }
