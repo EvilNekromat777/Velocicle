@@ -1,0 +1,38 @@
+::-webkit-input-placeholder {
+    opacity: .7;
+}
+
+/* webkit */
+::-moz-placeholder {
+    opacity: .7;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    opacity: .7;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    opacity: .7;
+}
+
+/* IE */
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+/* webkit */
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+/* Firefox 19+ */
+:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+/* Firefox 18- */
+:focus:-ms-input-placeholder {
+    opacity: 0;
+}
